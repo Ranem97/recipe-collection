@@ -83,15 +83,24 @@ p {
 
 @media (max-width: 1024px) {
   h1 {
-    font-size: 32px;
+    font-size: 24px;
     top: 20%;
+    line-height: 38px;
   }
   p {
     font-size: 12px;
-    line-height: 15px;
+    line-height: 18px;
     top: 40%;
   }
   .navbar {
     padding: 15px 50px;
+  }
+  .cards .recipe {
+    width: 320px;
+    height: 208px;
+    align-items: center;
+  }
+  .home h3 {
+    font-size: 18px;
   }
 }
