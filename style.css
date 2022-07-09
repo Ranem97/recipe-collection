@@ -55,7 +55,7 @@ p {
   line-height: 35px;
   padding-top: 10px;
 }
-.home img {
+.home .banner {
   height: 100%;
   width: 100%;
   object-fit: contain;
@@ -64,10 +64,17 @@ p {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
-  width: 520px;
-  height: 408px;
-  margin: 20px;
+  padding-bottom: 20px;
+  width: 450px;
+
+  /* height: 408px; */
+  /* margin: 20px; */
+}
+.cards span {
+  width: 40px;
+}
+.cards .recipe img {
+  width: 450px;
 }
 .cards .row {
   margin: 0;
@@ -80,27 +87,58 @@ p {
   line-height: 38px;
   color: var(--secondary-color);
 }
+footer {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  background: #f9f7fe;
+  margin-top: 100px;
+  padding: 35px 50px;
+}
+footer img {
+  width: 20px;
+}
+footer a {
+  text-decoration: none;
+  margin: 10px;
+}
+footer h6 {
+  font-weight: 300;
+}
 
 @media (max-width: 1024px) {
   h1 {
     font-size: 24px;
     top: 20%;
     line-height: 38px;
+    padding-bottom: 15px;
   }
   p {
     font-size: 12px;
-    line-height: 18px;
+    line-height: 20px;
     top: 40%;
   }
   .navbar {
     padding: 15px 50px;
   }
   .cards .recipe {
-    width: 320px;
-    height: 208px;
     align-items: center;
   }
+  .cards .recipe img {
+    width: 260px;
+  }
   .home h3 {
-    font-size: 18px;
+    font-size: 14px;
+  }
+  .cards span {
+    width: 0;
+  }
+  footer {
+    text-align: center;
+    height: 200px;
+  }
+  footer h4,
+  h6 {
+    padding: 20px;
   }
 }
