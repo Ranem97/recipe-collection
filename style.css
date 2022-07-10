@@ -43,7 +43,7 @@ h1 {
   font-size: 72px;
   line-height: 98px;
 }
-p {
+.home p {
   position: absolute;
   top: 60%;
   left: 50%;
@@ -105,6 +105,49 @@ footer a {
 footer h6 {
   font-weight: 300;
 }
+.about img {
+  width: 360px;
+  /* display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0; */
+}
+.about .info {
+  margin: 200px auto;
+}
+.about h1 {
+  color: var(--secondary-color);
+}
+.about h3 {
+  font-size: 54px;
+  line-height: 87px;
+  color: var(--secondary-color);
+}
+.about p {
+  padding-right: 100px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--secondary-color);
+}
+.about .social img {
+  width: 18px;
+}
+.social {
+  margin-top: 50px;
+}
+#follow {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--secondary-color);
+  padding-right: 30px;
+}
+#icons a {
+  padding-right: 30px;
+}
 
 @media (max-width: 1024px) {
   h1 {
@@ -140,5 +183,16 @@ footer h6 {
   footer h4,
   h6 {
     padding: 20px;
+  }
+}
+@media (max-width: 360px) {
+  h1 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 12px;
+  }
+  .about img {
+    width: 260px;
   }
 }
