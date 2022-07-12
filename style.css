@@ -32,7 +32,7 @@
   text-align: center;
   color: white;
 }
-h1 {
+.home h1 {
   position: absolute;
   top: 30%;
   left: 50%;
@@ -107,13 +107,10 @@ footer h6 {
 }
 .about img {
   width: 360px;
-  /* display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  padding: 0; */
+  margin-right: 50px;
 }
 .about .info {
-  margin: 200px auto;
+  margin: 100px auto 100px;
 }
 .about h1 {
   color: var(--secondary-color);
@@ -136,7 +133,20 @@ footer h6 {
 .social {
   margin-top: 50px;
 }
-#follow {
+.about .social a {
+  text-decoration: none;
+}
+.about .bio {
+  vertical-align: middle;
+}
+.about h4 {
+  font-size: 36px;
+  line-height: 49px;
+  text-align: center;
+  color: var(--secondary-color);
+  margin-bottom: 50px;
+}
+.about #follow {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 700;
@@ -148,15 +158,48 @@ footer h6 {
 #icons a {
   padding-right: 30px;
 }
+.about .favorite img {
+  width: 320px;
+}
+.about .favorite h5 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 33px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.about .favorite p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--secondary-color);
+  padding: 0;
+  width: 320px;
+}
+.about .favorite .col-lg-3 {
+  margin: 40px;
+}
+.about h1 {
+  text-align: center;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 98px;
+  color: var(--secondary-color);
+}
 
 @media (max-width: 1024px) {
-  h1 {
+  .home h1 {
     font-size: 24px;
     top: 20%;
     line-height: 38px;
     padding-bottom: 15px;
   }
-  p {
+  .home p {
     font-size: 12px;
     line-height: 20px;
     top: 40%;
@@ -184,15 +227,38 @@ footer h6 {
   h6 {
     padding: 20px;
   }
+  .about h1 {
+    font-size: 38px;
+    text-align: center;
+  }
+  .about .info {
+    text-align: center;
+    margin: 50px auto;
+  }
+  .about h3 {
+    font-size: 34px;
+    line-height: 87px;
+  }
+  .about p {
+    padding: 0;
+  }
 }
 @media (max-width: 360px) {
-  h1 {
+  .home h1 {
     font-size: 16px;
   }
-  p {
+  .home p {
     font-size: 12px;
   }
   .about img {
     width: 260px;
+    margin-right: 0;
+  }
+  .about .favorite img {
+    width: 260px;
+  }
+  .about .favorite .col-lg-3 {
+    margin: 10px auto;
+    text-align: center;
   }
 }
