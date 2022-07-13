@@ -3,6 +3,17 @@
   --secondary-color: #272142;
   --primary-font-family: "Nunito", sans-serif;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: var(--primary-font-family);
+  font-style: normal;
+  color: var(--secondary-color);
+}
 
 .navbar {
   padding: 35px 50px;
@@ -33,23 +44,23 @@
   color: white;
 }
 .home h1 {
+  color: white;
   position: absolute;
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: "Nunito";
-  font-style: normal;
+
   font-weight: 700;
   font-size: 72px;
   line-height: 98px;
 }
 .home p {
+  color: white;
   position: absolute;
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: "Nunito";
-  font-style: normal;
+
   font-weight: 300;
   font-size: 24px;
   line-height: 35px;
@@ -80,12 +91,9 @@
   margin: 0;
 }
 .home h3 {
-  font-family: "Nunito";
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 38px;
-  color: var(--secondary-color);
 }
 footer {
   position: absolute;
@@ -112,20 +120,16 @@ footer h6 {
 .about .info {
   margin: 100px auto 100px;
 }
-.about h1 {
-  color: var(--secondary-color);
-}
+
 .about h3 {
   font-size: 54px;
   line-height: 87px;
-  color: var(--secondary-color);
 }
 .about p {
   padding-right: 100px;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  color: var(--secondary-color);
 }
 .about .social img {
   width: 18px;
@@ -143,7 +147,6 @@ footer h6 {
   font-size: 36px;
   line-height: 49px;
   text-align: center;
-  color: var(--secondary-color);
   margin-bottom: 50px;
 }
 .about #follow {
@@ -162,7 +165,6 @@ footer h6 {
   width: 320px;
 }
 .about .favorite h5 {
-  font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 33px;
@@ -170,12 +172,9 @@ footer h6 {
   margin-top: 20px;
 }
 .about .favorite p {
-  font-family: "Nunito";
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
-  color: var(--secondary-color);
   padding: 0;
   width: 320px;
 }
@@ -184,21 +183,17 @@ footer h6 {
 }
 .about h1 {
   text-align: center;
-  font-family: "Nunito";
-  font-style: normal;
+
   font-weight: 700;
   font-size: 72px;
   line-height: 98px;
-  color: var(--secondary-color);
 }
 .recipe h1 {
   text-align: center;
-  font-family: "Nunito";
-  font-style: normal;
+
   font-weight: 700;
   font-size: 72px;
   line-height: 98px;
-  color: var(--secondary-color);
 }
 .recipe .row .col-12 {
   text-align: center;
@@ -210,6 +205,28 @@ footer h6 {
 }
 .recipe h3 {
   margin: 40px 0;
+  position: absolute;
+  width: 560px;
+  height: 49px;
+  left: calc(51% - 560px / 2 - 173px);
+  top: 769px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+}
+.recipe h5 {
+  margin-top: 150px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+}
+.recipe hr {
+  border: none;
+  border-top: 2px dashed #67d5d2;
+  background-color: #fff;
+  height: 1px;
+  width: 75%;
+  margin: 25px auto;
 }
 
 @media (max-width: 1024px) {
