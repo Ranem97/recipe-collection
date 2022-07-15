@@ -90,7 +90,7 @@ p {
 .cards .row {
   margin: 0;
 }
-.home h3 {
+.home .cards h3 {
   font-weight: 700;
   font-size: 24px;
   line-height: 38px;
@@ -148,6 +148,7 @@ footer h6 {
   line-height: 49px;
   text-align: center;
   margin-bottom: 50px;
+  font-weight: 700;
 }
 .about #follow {
   font-family: "Nunito";
@@ -181,14 +182,9 @@ footer h6 {
 .about .favorite .col-lg-3 {
   margin: 40px;
 }
-.about h1 {
-  text-align: center;
-
-  font-weight: 700;
-  font-size: 72px;
-  line-height: 98px;
-}
-.recipe h1 {
+.about h1,
+.recipe h1,
+.contact h1 {
   text-align: center;
 
   font-weight: 700;
@@ -207,7 +203,7 @@ footer h6 {
 .recipe img {
   width: 760px;
 }
-.recipe h3 {
+.recipe .container h3 {
   margin: 40px 0;
   position: absolute;
   height: 49px;
@@ -247,6 +243,34 @@ footer h6 {
   color: #f65282;
   margin-bottom: 15px;
 }
+.contact .container {
+  margin: 125px auto;
+}
+.contact img {
+  margin-left: 60px;
+}
+.contact h4 {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+
+  color: #662eed;
+}
+.contact .info {
+  display: grid;
+  place-content: center;
+  justify-content: start;
+}
+.contact i {
+  margin-right: 30px;
+}
+.contact p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+}
 
 @media (max-width: 1024px) {
   .home h1 {
@@ -283,7 +307,9 @@ footer h6 {
   h6 {
     padding: 20px;
   }
-  .about h1 {
+  .about h1,
+  .recipe h1,
+  .contact h1 {
     font-size: 38px;
     text-align: center;
   }
@@ -301,12 +327,20 @@ footer h6 {
   .recipe .container {
     width: 340px;
   }
-  .recipe img {
+  .recipe img,
+  .contact img {
     width: 320px;
   }
-  .recipe h1 {
-    font-size: 38px;
+  .contact img {
+    margin: 0 0 50px 0;
   }
+  .contact {
+    text-align: center;
+  }
+  .contact .container {
+    margin: 35px auto;
+  }
+
   .recipe .row .col-12 {
     margin-top: 0;
   }
