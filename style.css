@@ -157,10 +157,10 @@ footer h6 {
   font-size: 18px;
   line-height: 30px;
   color: var(--secondary-color);
-  padding-right: 30px;
+  padding-right: 25px;
 }
 #icons a {
-  padding-right: 30px;
+  padding-right: 25px;
 }
 .about .favorite img {
   width: 320px;
@@ -293,8 +293,9 @@ footer h6 {
   .cards .recipe img {
     width: 260px;
   }
-  .home h3 {
-    font-size: 14px;
+  .home .cards h3 {
+    font-size: 18px;
+    width: 260px;
   }
   .cards span {
     width: 0;
