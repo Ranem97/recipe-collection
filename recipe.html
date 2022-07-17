@@ -13,6 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Ceviche+One&family=Joan&family=Montserrat:wght@100;700&family=Nunito&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- JavaScript Bundle with Popper -->
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
@@ -49,6 +50,11 @@
     </nav>
     <div class="recipe">
         <h1>Recipe Collection</h1>
+        <button id="btnScrollToTop">
+            <span class="material-icons">
+                arrow_upward
+            </span>
+        </button>
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -199,7 +205,17 @@
         </div>
         <h6>© 2022 Ranem Al-Haffar All rights reserved.</h6>
     </footer>
+    <script>
+        const btnScrollToTop = document.querySelector('#btnScrollToTop');
 
+        btnScrollToTop.addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "smooth"
+            })
+        });
+    </script>
 </body>
 
 </html>
