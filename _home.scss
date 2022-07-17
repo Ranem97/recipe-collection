@@ -1,0 +1,38 @@
+@mixin fontStyle($weight, $size, $height) {
+   font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+}
+.home .container {
+  max-width: 100%;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  text-align: center;
+  color: white;
+  h1 {
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @include fontStyle(700,72px ,98px );
+}
+p {
+  color: white;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ @include fontStyle(300,24px ,35px );
+  padding-top: 10px;
+}
+.banner {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.cards h3 {
+  @include fontStyle(700,24px ,38px );
+}
+}

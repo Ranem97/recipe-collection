@@ -1,0 +1,30 @@
+@mixin fontStyle($weight, $size, $height) {
+   font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+}
+.contact {
+.container {
+  margin: 125px auto;
+}
+img {
+  margin-left: 60px;
+}
+h4 {
+  @include fontStyle(700,18px ,25px );
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #662eed;
+}
+.info {
+  display: grid;
+  place-content: center;
+  justify-content: start;
+}
+i {
+  margin-right: 30px;
+}
+p {
+  @include fontStyle(400,24px ,30px );
+}
+}

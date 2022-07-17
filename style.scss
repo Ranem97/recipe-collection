@@ -1,0 +1,156 @@
+$primaryColor : #662eed;
+$secondaryColor : #272142;
+$primaryFontFamily : "Nunito", sans-serif;
+@import './home';
+@import './about';
+@import './footer';
+@import './navbar';
+@import './recipe';
+@import './contact';
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: $primaryFontFamily;
+  font-style: normal;
+  color: $secondaryColor;
+}
+.cards .recipe {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 20px;
+  width: 450px;
+ img {
+  width: 450px;
+}
+}
+.cards span {
+  width: 40px;
+}
+.cards .row {
+  margin: 0;
+}
+.about h1,
+.recipe h1,
+.contact h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 98px;
+}
+
+
+@media (max-width: 1024px) {
+  .home .container {
+    h1 {
+    font-size: 24px;
+    top: 20%;
+    line-height: 38px;
+    padding-bottom: 15px;
+  }
+  p {
+    font-size: 12px;
+    line-height: 20px;
+    top: 40%;
+  }
+  }
+  .navbar {
+    padding: 15px 50px;
+  }
+  .cards {
+   .recipe {
+    align-items: center;
+  }
+  .recipe img {
+    width: 260px;
+  }
+  h3 {
+    font-size: 18px;
+    width: 260px;
+  }
+   span {
+    width: 0;
+  }
+  }
+  footer {
+    text-align: center;
+    height: 200px;
+    h4,
+    h6 {
+    padding: 20px;
+  }
+  }
+  .about h1,
+  .recipe h1,
+  .contact h1 {
+    font-size: 38px;
+    text-align: center;
+  }
+  .about {
+    .info {
+    text-align: center;
+    margin: 50px auto;
+  }
+      h3 {
+    font-size: 34px;
+    line-height: 87px;
+  }
+      p {
+    padding: 0;
+  }
+  }
+  .recipe {
+  .container {
+    width: 340px;
+  }
+  .row .col-12 {
+    margin-top: 0;
+  }
+  .container h3 {
+    margin-bottom: 0;
+
+    font-size: 25px;
+  }
+  .method {
+    display: none;
+  }
+  }
+  .recipe img,
+  .contact img {
+    width: 320px;
+  }
+  .contact {
+    text-align: center;
+     img {
+    margin: 0 0 50px 0;
+  }
+  .container {
+    margin: 35px auto;
+  }
+  }
+}
+@media (max-width: 360px) {
+  .home .container h1 {
+    font-size: 16px;
+  }
+  .home .container p {
+    font-size: 12px;
+  }
+  .about {
+   img {
+    width: 260px;
+    margin-right: 0;
+  }
+     .favorite img {
+    width: 260px;
+  }
+     .favorite .col-lg-3 {
+    margin: 10px auto;
+    text-align: center;
+  }
+  }
+}

@@ -1,0 +1,64 @@
+@mixin fontStyle($weight, $size, $height) {
+   font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+}
+.about {
+img {
+  width: 360px;
+  margin-right: 50px;
+}
+.info {
+  margin: 100px auto 100px;
+}
+h3 {
+  @include fontStyle(100,54px ,87px );
+}
+p {
+  padding-right: 100px;
+  @include fontStyle(400,18px ,30px );
+}
+.social img {
+  width: 18px;
+}
+.social {
+  margin-top: 50px;
+}
+.social a {
+  text-decoration: none;
+}
+.bio {
+  vertical-align: middle;
+}
+h4 {
+  @include fontStyle(700,36px ,49px );
+  text-align: center;
+  margin-bottom: 50px;
+}
+#follow {
+  font-family: $primaryFontFamily;
+  font-style: normal;
+  @include fontStyle(700,18px ,30px );
+  color: $secondaryColor;
+  padding-right: 25px;
+}
+#icons a {
+  padding-right: 25px;
+}
+.favorite img {
+  width: 320px;
+}
+.favorite h5 {
+  @include fontStyle(600,20px ,33px );
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.favorite p {
+  @include fontStyle(400,16px ,30px );
+  padding: 0;
+  width: 320px;
+}
+.favorite .col-lg-3 {
+  margin: 40px;
+}
+} 
